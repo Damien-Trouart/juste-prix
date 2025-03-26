@@ -5,7 +5,8 @@ box-sizing: border-box;
 }
 
 :root{
-    --mainColor : papayawhip
+    --mainColor : papayawhip;
+    --victoryBackground : linear-gradient(green,lightgreen)
 }
 .carte {
     grid-area: carte;
@@ -106,7 +107,7 @@ main {
     z-index: 2;
     display: none;
     position: absolute;
-    width: 50vw;
+    width: 100vw;
     height: 100vh;
     opacity: 0.5;
     & img{
@@ -117,15 +118,15 @@ main {
 }
 
 .victory{
-    transform: rotate(-35deg);
+    transform: rotate(25deg);
     top: 0;
-    left:10rem;
+    left:150px;
 }
 
 .fail{
-    transform: rotate(35deg);
-    top: 50px;
-    right: 0;
+    /* transform: rotate(35deg); */
+    top: 0;
+    right: -0;
 }
 
 @keyframes turntofade {

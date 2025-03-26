@@ -82,6 +82,7 @@ function checkNumber() {
         HTMLanswer.textContent=(`${answer}`);
         btnSubmit.disabled = true;
         victory.style.display = "block";
+        // main.style.background = "var(--victoryBackground)";
         
     }
     if (tries >= 7) {
@@ -89,7 +90,6 @@ function checkNumber() {
         tries=0;
         nbreTries.textContent=(``);
         main.style.backgroundColor = "rgba(220, 20, 0, 0.5)";
-        consigne.style.color = "red";
         btnSubmit.disabled = true;
         turnClockwise(carteDos);
         turnAntiClockwise(carteFace);
